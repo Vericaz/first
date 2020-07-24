@@ -24,41 +24,75 @@
   <body>
     <!-- Add your site or application content here -->
     <header>
-      <h1 style="text-align: center;">Second page</h1>
-      <a href="/index.html">Go to first page</a>
+      <h1 style="text-align: center;">Job Application Form</h1>
+      <br />
     </header>
     <main>
+      <h2>Personal Information</h2>
       <form id="first-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="firstname" /><br />
-        <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" /><br />
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="firstname" />
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" /><br /><br />
 
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> I have a bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> I have a car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3"> I have a boat</label><br />
+        <label for="birthday">Date of birth:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
 
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label><br />
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="07x-xxx-xxx" />
+
+        <h2>Job Information</h2>
+        <label for="position">What position are you applying for:</label>
+        <select name="position" id="position" form="jobposition">
+          <option value="front-end-developer">Front-End Developer</option>
+          <option value="back-end-developer">Back-End Developer</option>
+          <option value="full-stack-developer">Full Stack Developer</option>
+          <option value="qa">Quality Assurance</option> </select
+        ><br /><br />
+
+        <label for="startdate">Available start date:</label>
+        <input
+          type="text"
+          id="startdate"
+          name="startdate"
+          placeholder="DD/MM/YYYY"
+        /><br />
+
+        <p>Current employment status:</p>
+        <input type="radio" id="employed" name="status" value="employed" />
+        <label for="employed">Employed</label><br />
+        <input type="radio" id="unemployed" name="status" value="unemployed" />
+        <label for="unemployed">Unemployed</label><br />
+        <input
+          type="radio"
+          id="self-employed"
+          name="status"
+          value="self-employed"
+        />
+        <label for="self-employed">Self-employed</label><br />
+        <input type="radio" id="student" name="status" value="student" />
+        <label for="student">Student</label>
+        <br /><br />
+
+        <label for="myfile">Upload your resume:</label>
+        <input type="file" id="myfile" name="myfile" />
 
         <input
           type="hidden"
           name="hidden_field"
           value="value of hidden field"
-        /><br />
+        /><br /><br />
 
         <input type="submit" value="Submit" />
       </form>
       <pre id="preview"></pre>
     </main>
-    <footer></footer>
+    <footer>
+      <a href="/index.html">Go to first page</a>
+    </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
