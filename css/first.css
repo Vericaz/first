@@ -1,0 +1,31 @@
+header {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  font-style: italic;
+}
+
+main {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.first {
+  color: blue;
+}
+
+.second {
+  color: purple;
+  text-align: center;
+  font-style: italic;
+}
+
+#firstID {
+  color: yellow;
+}
+
+#secondID {
+  color: royalblue;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
