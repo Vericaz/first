@@ -1,11 +1,32 @@
-header {
+h1 {
   text-align: center;
   color: green;
   font-weight: bold;
   font-style: italic;
 }
 
-main {
+h1 .inside {
+  color: red;
+}
+
+h1 .inside .double-inside {
+  color: pink;
+}
+
+h1.second {
+  color: black;
+  text-decoration-line: underline;
+}
+
+h2 .personal {
+  font-style: italic;
+}
+
+#main a {
+  font-weight: bold;
+}
+
+main.index {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
@@ -28,4 +49,12 @@ main {
   color: royalblue;
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+input:required {
+  border: 2px solid;
 }
