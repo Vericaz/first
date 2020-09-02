@@ -16,23 +16,47 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/first.css" />
+    <link rel="stylesheet" href="./css/first.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body style="font-size: 20px;">
+  <body style="font-size: 20px">
     <!-- Add your site or application content here -->
     <header>
-      <h1 id="first.ID" class="first" style="color: magenta;">
+      <h1 id="first.ID" class="first" style="color: magenta">
         Verica Zoksimovska's Portfolio
         <span class="inside"
           >2020<strong class="double-inside">July</strong></span
         >
       </h1>
-      <p id="first.id">web developer</p>
+      <div class="container">
+        <div class="row">
+          <p class="col-6">web developer</p>
+          <p class="col-6">web developer 2</p>
+        </div>
+        <div class="row">
+          <p class="col-sm-12 col-lg-6">web developer 3</p>
+          <p class="col-sm-12 col-lg-6">web developer 4</p>
+        </div>
+      </div>
+
       <img src="./img/slika.jpg" alt="Avatar" title="Avatar" width="150" />
+      <!-- <div style="width: 100px; display: inline-block;">
+        some block-level element
+      </div>
+      <span>
+        some inline element
+      </span>
+      <span style="display: block;">
+        second inline element
+      </span> -->
+      <div id="position-example">change position</div>
     </header>
     <main id="main" class="index">
       <h2 class="second">My social networks</h2>
@@ -48,8 +72,8 @@
         </li>
       </ul>
     </main>
-    <footer style="text-align: center;">
-      <a href="/second.html" style="font-style: normal;">Go to second page</a
+    <footer style="text-align: center">
+      <a href="/second.html" style="font-style: normal">Go to second page</a
       ><br />
       <span>Verica Zoksimovska 2020-2021</span>
     </footer>
@@ -57,6 +81,7 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="./js/hello.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
